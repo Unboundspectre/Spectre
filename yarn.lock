@@ -2,6 +2,18 @@
 # yarn lockfile v1
 
 
+"@types/moment-timezone@^0.2.34":
+  version "0.2.34"
+  resolved "https://registry.yarnpkg.com/@types/moment-timezone/-/moment-timezone-0.2.34.tgz#948e0aff82742a31dd63714d1aac9616bc375053"
+  dependencies:
+    moment ">=2.14.0"
+
+"@types/moment@^2.13.0":
+  version "2.13.0"
+  resolved "https://registry.yarnpkg.com/@types/moment/-/moment-2.13.0.tgz#604ebd189bc3bc34a1548689404e61a2a4aac896"
+  dependencies:
+    moment "*"
+
 abbrev@1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.0.tgz#d0554c2256636e2f56e7c2e5ad183f859428d81f"
@@ -178,7 +190,7 @@ callsites@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/callsites/-/callsites-0.2.0.tgz#afab96262910a7f33c19a5775825c69f34e350ca"
 
-chai@latest:
+chai@^3.5.0:
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/chai/-/chai-3.5.0.tgz#4d02637b067fe958bdbfdd3a40ec56fef7373247"
   dependencies:
@@ -302,7 +314,7 @@ create-server@~1.0.1:
   dependencies:
     connected "0.0.x"
 
-cross-env@latest:
+cross-env@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/cross-env/-/cross-env-5.0.0.tgz#565ccae4d09676441a5087f406fe7661a29c931b"
   dependencies:
@@ -415,7 +427,7 @@ diff@3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/diff/-/diff-3.2.0.tgz#c9ce393a4b7cbd0b058a725c93df299027868ff9"
 
-dirty-chai@latest:
+dirty-chai@^1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/dirty-chai/-/dirty-chai-1.2.2.tgz#78495e619635f7fe44219aa4c837849bf183142e"
 
@@ -738,7 +750,7 @@ eyes@0.1.x:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/eyes/-/eyes-0.1.8.tgz#62cf120234c683785d902348a800ef3e0cc20bc0"
 
-fakeredis@^2.0.0, fakeredis@latest:
+fakeredis@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/fakeredis/-/fakeredis-2.0.0.tgz#752fb832819ace31be88668cf1358d6f1438afc0"
   dependencies:
@@ -973,7 +985,7 @@ ioredis@^2.4.1:
     redis-commands "^1.2.0"
     redis-parser "^1.3.0"
 
-ioredis@^3.0.0, ioredis@latest:
+ioredis@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/ioredis/-/ioredis-3.0.0.tgz#ecbfd5e1e89df94f55723bb4d81761b183609a0d"
   dependencies:
@@ -1247,7 +1259,7 @@ mkdirp@0.5.1, mkdirp@^0.5.0, mkdirp@^0.5.1:
   dependencies:
     minimist "0.0.8"
 
-mocha@latest:
+mocha@^3.4.1:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/mocha/-/mocha-3.4.1.tgz#a3802b4aa381934cacb38de70cf771621da8f9af"
   dependencies:
@@ -1262,6 +1274,16 @@ mocha@latest:
     lodash.create "3.1.1"
     mkdirp "0.5.1"
     supports-color "3.1.2"
+
+moment-timezone@^0.5.13:
+  version "0.5.13"
+  resolved "https://registry.yarnpkg.com/moment-timezone/-/moment-timezone-0.5.13.tgz#99ce5c7d827262eb0f1f702044177f60745d7b90"
+  dependencies:
+    moment ">= 2.9.0"
+
+moment@*, "moment@>= 2.9.0", moment@>=2.14.0:
+  version "2.18.1"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.18.1.tgz#c36193dd3ce1c2eed2adb7c802dbbc77a81b1c0f"
 
 ms@0.7.1:
   version "0.7.1"
@@ -1645,7 +1667,7 @@ standard-engine@~7.0.0:
     minimist "^1.1.0"
     pkg-conf "^2.0.0"
 
-standard@latest:
+standard@^10.0.2:
   version "10.0.2"
   resolved "https://registry.yarnpkg.com/standard/-/standard-10.0.2.tgz#974c1c53cc865b075a4b576e78441e1695daaf7b"
   dependencies:
@@ -1873,7 +1895,7 @@ ws@^2.0.0:
     safe-buffer "~5.0.1"
     ultron "~1.1.0"
 
-ws@latest:
+ws@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/ws/-/ws-3.0.0.tgz#98ddb00056c8390cb751e7788788497f99103b6c"
   dependencies:
