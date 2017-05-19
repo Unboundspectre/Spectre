@@ -1,7 +1,0 @@
-{"level":"info","message":"--------------------------------------","timestamp":"192.168.10.1 @ 2017-05-19T14:32:22.371Z"}
-{"level":"info","message":"ACTIONHERO COMMAND >> generate initializer","timestamp":"192.168.10.1 @ 2017-05-19T14:32:22.372Z"}
-{"level":"info","message":"--------------------------------------","timestamp":"192.168.10.1 @ 2017-05-19T14:32:22.373Z"}
-{"level":"info","message":"using default value of `1000` for `loadPriority`","timestamp":"192.168.10.1 @ 2017-05-19T14:32:22.373Z"}
-{"level":"info","message":"using default value of `1000` for `startPriority`","timestamp":"192.168.10.1 @ 2017-05-19T14:32:22.373Z"}
-{"level":"info","message":"using default value of `1000` for `stopPriority`","timestamp":"192.168.10.1 @ 2017-05-19T14:32:22.373Z"}
-{"level":"info","message":" - wrote file '/home/dennisbrandt/playground/spectre-bot/initializers/discord.js'","timestamp":"192.168.10.1 @ 2017-05-19T14:32:22.374Z"}

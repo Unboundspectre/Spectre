@@ -11,9 +11,12 @@
     "discord.io": "github:izy521/discord.io",
     "fakeredis": "^2.0.0",
     "ioredis": "^3.0.0",
+    "moment-timezone": "^0.5.13",
     "ws": "^3.0.0"
   },
   "devDependencies": {
+    "@types/moment": "^2.13.0",
+    "@types/moment-timezone": "^0.2.34",
     "chai": "^3.5.0",
     "cross-env": "^5.0.0",
     "dirty-chai": "^1.2.2",
