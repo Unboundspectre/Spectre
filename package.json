@@ -1,0 +1,43 @@
+{
+  "author": "XoneFobic <xonefobic+spectrebot@gmail.com>",
+  "name": "spectre_bot",
+  "description": "Spectre Bot for Discord",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=6.9.0"
+  },
+  "dependencies": {
+    "actionhero": "17.0.1",
+    "discord.io": "github:izy521/discord.io",
+    "fakeredis": "^2.0.0",
+    "ioredis": "^3.0.0",
+    "ws": "^3.0.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "cross-env": "^5.0.0",
+    "dirty-chai": "^1.2.2",
+    "mocha": "^3.4.1",
+    "standard": "^10.0.2"
+  },
+  "scripts": {
+    "start": "actionhero start",
+    "actionhero": "actionhero",
+    "pretest": "standard",
+    "test": "cross-env NODE_ENV=test mocha"
+  },
+  "standard": {
+    "ignore": [
+      "public/script/client.*"
+    ],
+    "globals": [
+      "describe",
+      "before",
+      "beforeEach",
+      "after",
+      "afterEach",
+      "it",
+      "expect"
+    ]
+  }
+}
