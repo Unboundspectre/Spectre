@@ -12,6 +12,12 @@ module.exports = {
   stopPriority: 1000,
   initialize: (api, next) => {
     api.discord = {}
+    api.discord.commands = {}
+
+    envConfig.commands.forEach(command => {
+      api.discord.commands[command.command] = require(`../commands/${command.file}`)
+    })
+
     api.bot = new Discord.Client({
       token: envConfig.token || '',
       autorun: true
@@ -43,6 +49,7 @@ module.exports = {
       const serverId = api.bot.channels[channelId].guild_id
 
       let cmd = message.split(' ')
+      let args = ''
 
       clearTimeout(timer)
 
@@ -53,13 +60,17 @@ module.exports = {
 
       // ~ //
 
+      for (let index = 1; index < cmd.length; index++) {
+        args += cmd[index] + ' '
+      }
+
       cmd = cmd[0].substring(1) // Remove prefix from first word
 
-      if (cmd === 'ping') {
-        api.bot.sendMessage({
-          to: channelId,
-          message: 'pong <:troll:311146565203001344>'
-        })
+      if (cmd === 'help') {
+
+      } else if (api.discord.commands[cmd]) {
+        api.log(`Sending command: ${cmd}`)
+        api.discord.commands[cmd](api, args.trim(), user, userId, channelId)
       }
     })
 

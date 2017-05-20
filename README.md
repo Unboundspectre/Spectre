@@ -17,4 +17,17 @@ _Under Construction_
 <a name="bot-commands"></a>
 ## Bot Commands
 
-_Under Construction_
+`!class :className`  
+Change character class to one of the following:
+- `death knight`
+- `demon hunter`
+- `druid`
+- `hunter`
+- `mage`
+- `monk`
+- `paladin`
+- `priest`
+- `rogue`
+- `shaman`
+- `warlock`
+- `warrior`
