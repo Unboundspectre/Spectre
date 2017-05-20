@@ -1,3 +1,13 @@
 {
+  "commands": [
+    {
+      "command": "help",
+      "file": "help.js"
+    },
+    {
+      "command": "class",
+      "file": "class.js"
+    }
+  ],
   "token": "Replace with token. Find at: https://discordapp.com/developers/applications/me"
 }

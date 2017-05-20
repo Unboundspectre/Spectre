@@ -2,6 +2,14 @@
 # yarn lockfile v1
 
 
+"@types/bluebird@^3.5.4":
+  version "3.5.4"
+  resolved "https://registry.yarnpkg.com/@types/bluebird/-/bluebird-3.5.4.tgz#f120162b04fd6d55e10346d7e2e96eed462b02cf"
+
+"@types/lodash@^4.14.64":
+  version "4.14.64"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.64.tgz#979cf3a3d4a368670840bf9b3e448dc33ffe84ee"
+
 "@types/moment-timezone@^0.2.34":
   version "0.2.34"
   resolved "https://registry.yarnpkg.com/@types/moment-timezone/-/moment-timezone-0.2.34.tgz#948e0aff82742a31dd63714d1aac9616bc375053"
@@ -153,7 +161,7 @@ balanced-match@^0.4.1:
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-0.4.2.tgz#cb3f3e3c732dc0f01ee70b403f302e61d7709838"
 
-bluebird@^3.3.4:
+bluebird@^3.3.4, bluebird@^3.5.0:
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.0.tgz#791420d7f551eea2897453a8a77653f96606d67c"
 
@@ -1198,7 +1206,7 @@ lodash.keys@^3.0.0:
     lodash.isarguments "^3.0.0"
     lodash.isarray "^3.0.0"
 
-lodash@^4.0.0, lodash@^4.14.0, lodash@^4.3.0, lodash@^4.8.2:
+lodash@^4.0.0, lodash@^4.14.0, lodash@^4.17.4, lodash@^4.3.0, lodash@^4.8.2:
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
