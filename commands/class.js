@@ -42,7 +42,7 @@ module.exports = function (api, args, user, userId, channelId) {
       })
       api.bot.sendMessage({
         to: channelId,
-        message: `Removed class ${vClass} from ${user}`
+        message: `Removed class ${vClass} from <@!${userId}>`
       })
     }
   }
@@ -61,12 +61,12 @@ module.exports = function (api, args, user, userId, channelId) {
 
       api.bot.sendMessage({
         to: channelId,
-        message: `Added class ${vClass} to ${user}`
+        message: `Added class ${vClass} to <@!${userId}>`
       })
 
       for (const removableClassId of api.bot.servers[serverId].members[userId].roles) {
         const removableClass = api.bot.servers[serverId].roles[removableClassId]
-        if (validateClass(args[0]) !== removableClass.name && classes.includes(removableClass.name.toLowerCase())) {
+        if (validateClass(args[0].toLowerCase()) !== removableClass.name && classes.includes(removableClass.name.toLowerCase())) {
           api.log(`Removing class: ${removableClass.name} from ${user}`, 'info')
           setTimeout(() => api.bot.removeFromRole({
             serverID: serverId,

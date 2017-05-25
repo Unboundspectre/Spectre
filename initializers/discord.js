@@ -32,9 +32,9 @@ module.exports = {
     api.bot.on('ready', () => {
       api.bot.setPresence({
         game: {
-          name: 'World Domination',
-          type: 1,
-          url: 'https://www.twitch.tv/xonefobic'
+          name: 'World Domination'
+          // type: 1,
+          // url: 'https://www.twitch.tv/xonefobic'
         }
       })
       api.log(`Time: ${moment().tz('Europe/Amsterdam').format('YYYY-MM-DD HH:mm:ss')}`, 'info')
