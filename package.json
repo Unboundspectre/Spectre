@@ -7,13 +7,14 @@
     "node": ">=6.9.0"
   },
   "dependencies": {
-    "actionhero": "17.0.1",
+    "actionhero": "^17.0.2",
     "bluebird": "^3.5.0",
-    "discord.io": "github:izy521/discord.io",
+    "discord.io": "^2.5.1",
     "fakeredis": "^2.0.0",
     "ioredis": "^3.0.0",
     "lodash": "^4.17.4",
     "moment-timezone": "^0.5.13",
+    "request": "^2.81.0",
     "ws": "^3.0.0"
   },
   "devDependencies": {
@@ -21,10 +22,11 @@
     "@types/lodash": "^4.14.64",
     "@types/moment": "^2.13.0",
     "@types/moment-timezone": "^0.2.34",
-    "chai": "^3.5.0",
+    "@types/request": "^0.0.43",
+    "chai": "^4.0.0",
     "cross-env": "^5.0.0",
     "dirty-chai": "^1.2.2",
-    "mocha": "^3.4.1",
+    "mocha": "^3.4.2",
     "standard": "^10.0.2"
   },
   "scripts": {

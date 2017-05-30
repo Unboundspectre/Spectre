@@ -14,19 +14,14 @@ module.exports = {
     api.discord = {}
     api.discord.commands = {}
 
-    envConfig.commands.forEach(command => {
-      api.discord.commands[command.command] = require(`../commands/${command.file}`)
-    })
+    envConfig.commands.forEach(command => { api.discord.commands[command.command] = require(`../commands/${command.file}`) })
 
-    api.bot = new Discord.Client({
-      token: envConfig.token || '',
-      autorun: true
-    })
+    api.bot = new Discord.Client({ token: envConfig.token || '', autorun: true })
 
     return next()
   },
   start: (api, next) => {
-    let timer = setTimeout(() => { api.bot.connect() }, timeout)
+    let timer = setTimeout(() => api.bot.connect(), timeout)
     let prefix = '!'
 
     api.bot.on('ready', () => {
@@ -36,6 +31,11 @@ module.exports = {
           // type: 1,
           // url: 'https://www.twitch.tv/xonefobic'
         }
+      })
+
+      api.bot.sendMessage({
+        to: '258527692264046593',
+        message: '```ini\n[ Status ]\nOnline\n```'
       })
       api.log(`Time: ${moment().tz('Europe/Amsterdam').format('YYYY-MM-DD HH:mm:ss')}`, 'info')
       api.log(`${api.bot.username} - (${api.bot.id})`, 'info')
@@ -66,9 +66,7 @@ module.exports = {
 
       cmd = cmd[0].substring(1) // Remove prefix from first word
 
-      if (cmd === 'help') {
-
-      } else if (api.discord.commands[cmd]) {
+      if (api.discord.commands[cmd]) {
         api.log(`Sending command: ${cmd}`)
         api.discord.commands[cmd](api, args.trim(), user, userId, channelId)
       }
